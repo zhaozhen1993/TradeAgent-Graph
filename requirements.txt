@@ -1,24 +1,41 @@
 # --- LangChain 核心框架 ---
 langchain
+langchain-core
+langchain-classic
 langchain-community
 langchain-openai
 
-# --- LLM 接口与环境配置 ---
-# 用于调用 ChatGPT、DeepSeek、通义千问等兼容 OpenAI 格式的模型
-openai
-# 用于读取 .env 文件中的 API Key
-python-dotenv
-
-# --- 异步与网络支持 ---
-# LangChain 的异步运行和网络请求依赖
-httpx
-aiohttp
-typing-extensions
+# --- LangGraph 多智能体编排 ---
 langgraph
-langchain-core
-langchain-classic
-llama-index-core
+langgraph-checkpoint-redis
+
+# --- RAG 与向量数据库 ---
 langchain-text-splitters
 langchain-huggingface
 langchain-docling
-langchain-chroma
+langchain-qdrant
+qdrant-client
+
+# --- LLM 接口与环境配置 ---
+openai
+python-dotenv
+dashscope
+
+# --- Web 框架 ---
+fastapi
+uvicorn[standard]
+pydantic
+
+# --- 异步与网络 ---
+httpx
+aiohttp
+typing-extensions
+
+# --- Redis 会话持久化 ---
+redis
+
+# --- 文档处理 ---
+docling
+
+# --- 工具库 ---
+portalocker
